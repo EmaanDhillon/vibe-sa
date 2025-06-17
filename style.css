@@ -109,3 +109,57 @@ button:hover {
   opacity: 0.1;
   background: url('/vibesa/images.jpeg') repeat;
 }
+
+
+
+
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .credits {
+    font-size: medium;
+    top: 5px;
+    right: 5px;
+  }
+
+  button {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  #trackName {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .controls {
+    width: 90%;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .credits {
+    font-size: small;
+  }
+
+  button {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  #trackName {
+    font-size: 13px;
+  }
+}
