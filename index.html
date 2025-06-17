@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vibesa - lofi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/vibesa/Daco_5288885.png">
+</head>
+<body>
+
+   
+  <div class="container">
+    <img src="cafe.gif" alt="lofi background" class="background" />
+    <div class="controls">
+      <button id="playPauseBtn">▶️</button>
+      <p id="trackName">🎧 Vibes</p>
+      <div class="volumeslider"><input type="range" id="volumeslider" min="0" max="1" step="0.01" value="0.5"></div>
+    </div>
+    <div class="credits">
+        <p>Made with ❤️ by <a href="https://www.instagram.com/emaandhillon/" fonr>Emaan</a></p>
+        <a href="https://github.com/EmaanDhillon">git</a>
+    </div>
+
+  <div class="overlay">
+ 
+  </div>
+   
+   
+  </div>
+
+
+  
+ <audio id="audio" src="beats.mp3" preload="auto"></audio>
+
+ 
+ <script>
+  const audio = document.getElementById('audio');
+  const playPauseBtn = document.getElementById('playPauseBtn');
+
+  playPauseBtn.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      playPauseBtn.textContent = '⏸️';
+    } else {
+      audio.pause();
+      playPauseBtn.textContent = '▶️';
+    }
+  });
+  const volumeslider = document.getElementById('volumeslider');
+  volumeslider.addEventListener('input', () => {
+    audio.volume = volumeslider.value; 
+  })
+</script>
+
+
+</body>
+</html>
