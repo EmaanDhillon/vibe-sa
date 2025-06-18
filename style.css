@@ -164,11 +164,3 @@ button:hover {
     font-size: 13px;
   }
 }
-
-iframe {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-  pointer-events: none;
-}
