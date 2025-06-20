@@ -4,22 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>vibesa - lofi</title>
-  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="icon" type="image/png" href="Daco_5288885.png">
 </head>
-<body>
+<body class="h-screen w-screen overflow-hidden font-sans">
 
    
-  <div class="container">
-    <img src="cafe.gif" alt="lofi background" class="background" />
-    <div class="controls">
+<div class="relative h-screen w-screen font-sans">
+    <img src="cafe.gif" alt="lofi background" class="absolute top-0 left-0 w-full h-full object-cover object-center -z-10" />
+
+    <div class="absolute left-1/2 bottom-1/10 transform -translate-x-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-md rounded-xl px-4 py-2 shadow-lg flex items-center gap-4 text-white">
       <button id="playPauseBtn">▶️</button>
       <p id="trackName">🎧 Vibes</p>
       <div class="volumeslider"><input type="range" id="volumeslider" min="0" max="1" step="0.01" value="0.5"></div>
     </div>
-    <div class="credits">
-        <p>Made with ❤️ by <a href="https://www.instagram.com/emaandhillon/" fonr>Emaan</a></p>
-        <a href="https://github.com/EmaanDhillon">git</a>
+    <div class="absolute right-1/100 font-semibold text-shadow-lg text-stone-300 
+    hover:text-blue-300 hover:drop-shadow-glow transition duration-300
+">
+        <p>Made with <span class="inline-block animate-pulse">❤️ </span> by <a href="https://www.instagram.com/emaandhillon/" class="hover:underline"> Emaan </a></p>
+        <a href="https://github.com/EmaanDhillon" class="absolute right-1/100 hover:underline">git</a>
     </div>
 
   <div class="overlay">
